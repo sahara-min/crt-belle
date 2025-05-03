@@ -148,7 +148,7 @@ float3 SignalSampleInput(float u, float v) {
 
 float4 SignalMainPS(float4 xy: SV_Position, float2 uv : TEXCOORD) : SV_Target {
 
-	// This pass emulates signal bandwidth by applying a vertical blur to input.
+	// This pass emulates signal bandwidth by applying a horizontal blur to input.
 
 	float pixel_uv_width = 1.0 / screen_width;
 	float scanline_xy_height = screen_height / num_scanlines;
